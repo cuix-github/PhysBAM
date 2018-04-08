@@ -20,8 +20,8 @@ option(PHYSBAM_USE_OPENEXR  		"Turn ON to enable OpenEXR support" 										OFF 
 option(PHYSBAM_USE_FFTW     		"Turn ON to enable FFTW support"    										OFF )
 option(PHYSBAM_USE_MPI      		"Turn ON to enable MPI support"     										OFF )
 option(PHYSBAM_USE_PTHREADS      	"Turn ON to enable PThreads support"     									OFF )
-option(PHYSBAM_USE_COMPRESSION     	"Turn ON to enable Compression support"     								OFF )
-option(PHYSBAM_BUILD_PROJECTS       "Turn ON to build example projects"         								ON  )
+option(PHYSBAM_USE_COMPRESSION		"Turn ON to enable Compression support"     								OFF )
+option(PHYSBAM_BUILD_PROJECTS		"Turn ON to build example projects"         								ON  )
 ```
 
 Note that these options probably based on the libraries installed locally. If any errors pop up, go check the corresponding libraries.
