@@ -18,12 +18,12 @@ ${PhysBAM_PL_DIR}/Projects/user_projects/Levelset/main.cpp
 target_link_libraries(levelset PhysBAM_Tools PhysBAM_Geometry)
 
 
-add_executable(opengl_1d  ${PhysBAM_PL_DIR}/Projects/opengl_1d/main.cpp )
-target_link_libraries(opengl_1d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
+# add_executable(opengl_1d  ${PhysBAM_PL_DIR}/Projects/opengl_1d/main.cpp )
+# target_link_libraries(opengl_1d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
 
 
-add_executable(opengl_2d  ${PhysBAM_PL_DIR}/Projects/opengl_2d/main.cpp )
-target_link_libraries(opengl_2d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
+# add_executable(opengl_2d  ${PhysBAM_PL_DIR}/Projects/opengl_2d/main.cpp )
+# target_link_libraries(opengl_2d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
 
 
 add_executable(opengl_3d  ${PhysBAM_PL_DIR}/Projects/opengl_3d/main.cpp )
@@ -39,6 +39,7 @@ ${PhysBAM_PL_DIR}/Projects/user_projects/strand_forward_euler/main.cpp
 target_link_libraries(strand_forward_euler PhysBAM_Tools PhysBAM_Geometry)
 
 
+# strand_semi_implicit
 add_executable(strand_semi_implicit
 ${PhysBAM_PL_DIR}/Projects/user_projects/strand_semi_implicit/SIMULATION_DRIVER.cpp
 ${PhysBAM_PL_DIR}/Projects/user_projects/strand_semi_implicit/SIMULATION_LAYOUT.cpp

@@ -6,21 +6,23 @@ This is using the public version of [physbam](http://physbam.stanford.edu/)
 
 Latest Compiling Options:
 
--> option(PHYSBAM_USE_DOUBLE               "Turn ON to enable double support"                                              ON )
--> option(PHYSBAM_USE_DYADIC               "Turn ON to enable dyadic support"                                              OFF )
--> option(PHYSBAM_USE_BINTREE              "Turn ON to enable bintree support"                                             OFF )
--> option(PHYSBAM_USE_RLE                  "Turn ON to enable RLE support"                                                 OFF )
--> option(PHYSBAM_USE_ZLIB                 "Turn ON to enable zlib support"                                                OFF )
--> option(PHYSBAM_USE_ID_TYPES             "Treat ID types as int to avoid possible performance consequences"              OFF )
--> option(PHYSBAM_USE_FFMPEG               "Turn ON to enable ffmpeg support"                                              OFF )
--> option(PHYSBAM_USE_JPEG                 "Turn ON to enable libjpeg support"                                             OFF )
--> option(PHYSBAM_USE_PNG                  "Turn ON to enable png support"                                                 OFF )
--> option(PHYSBAM_USE_OPENEXR              "Turn ON to enable OpenEXR support"                                             ON  )
--> option(PHYSBAM_USE_FFTW                 "Turn ON to enable FFTW support"                                                OFF )
--> option(PHYSBAM_USE_MPI                  "Turn ON to enable MPI support"                                                 OFF )
--> option(PHYSBAM_USE_PTHREADS             "Turn ON to enable PThreads support"                                            OFF )
--> option(PHYSBAM_USE_COMPRESSION          "Turn ON to enable Compression support"                                         ON  )
--> option(PHYSBAM_BUILD_PROJECTS           "Turn ON to build example projects"                                             OFF )
+```
+-> option(PHYSBAM_USE_DOUBLE   		"Turn ON to enable double support"  										ON  )
+-> option(PHYSBAM_USE_DYADIC   		"Turn ON to enable dyadic support"  										ON  )
+-> option(PHYSBAM_USE_BINTREE  		"Turn ON to enable bintree support" 										OFF )
+-> option(PHYSBAM_USE_RLE      		"Turn ON to enable RLE support"     										OFF )
+-> option(PHYSBAM_USE_ZLIB     		"Turn ON to enable zlib support"    										ON  )
+-> option(PHYSBAM_USE_ID_TYPES   	"Treat ID types as int to avoid possible performance consequences"    		OFF )
+-> option(PHYSBAM_USE_FFMPEG   		"Turn ON to enable ffmpeg support"  										OFF )
+-> option(PHYSBAM_USE_JPEG     		"Turn ON to enable libjpeg support" 										OFF )
+-> option(PHYSBAM_USE_PNG      		"Turn ON to enable png support"     										OFF )
+-> option(PHYSBAM_USE_OPENEXR  		"Turn ON to enable OpenEXR support" 										ON  )
+-> option(PHYSBAM_USE_FFTW     		"Turn ON to enable FFTW support"    										OFF )
+-> option(PHYSBAM_USE_MPI      		"Turn ON to enable MPI support"     										OFF )
+-> option(PHYSBAM_USE_PTHREADS      "Turn ON to enable PThreads support"     									OFF )
+-> option(PHYSBAM_USE_COMPRESSION   "Turn ON to enable Compression support"     								ON  )
+-> option(PHYSBAM_BUILD_PROJECTS    "Turn ON to build example projects"         								OFF )
+```
 
 Note that these options probably based on the libraries installed locally. If any errors pop up, go check the corresponding libraries.
 
@@ -32,7 +34,7 @@ GCC 4.4.6
 GCC 4.6.3
 GCC 4.7.2
 GCC 4.8.1  -- (Does not compile several examples in project, Linking issue)
-GCC 5.4.0 pass
+GCC 5.4.0 pass (Ubuntu 16.04 x64)
 
 OSX:
 GCC 4.7.3
@@ -50,13 +52,9 @@ brew install ffmpeg openexr fftw zlib libpng libjpeg
 Currently does not compile on:
 
 ```
-
 Linux:
 OSX:
 Windows:
-
-VS 2013
-MinGW (GCC 3.4.5)
 ```
 Build testing using GCC 4.6.3 is availible [here](https://drone.io/github.com/hmazhar/physbam_public)
 

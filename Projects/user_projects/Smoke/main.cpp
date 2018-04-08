@@ -44,9 +44,9 @@ int main(int argc,char *argv[])
 
     PARSE_ARGS parse_args;
     parse_args.Add_Integer_Argument("-restart",0,"restart frame");
-    parse_args.Add_Integer_Argument("-scale",100,"fine scale grid resolution");
+    parse_args.Add_Integer_Argument("-scale",192,"fine scale grid resolution");
     parse_args.Add_Integer_Argument("-substep",-1,"output-substep level");
-    parse_args.Add_Integer_Argument("-e",100,"last frame");
+    parse_args.Add_Integer_Argument("-e",240,"last frame");
     parse_args.Add_Integer_Argument("-threads",1,"number of threads");
     parse_args.Add_Option_Argument("-3d","run in 3 dimensions");
 
