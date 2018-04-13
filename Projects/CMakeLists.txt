@@ -1,4 +1,3 @@
-
 include_directories(${PhysBAM_PL_DIR})
 
 add_executable(smoke 
@@ -14,7 +13,6 @@ ${PhysBAM_PL_DIR}/Projects/user_projects/Levelset/WATER_DRIVER.cpp
 ${PhysBAM_PL_DIR}/Projects/user_projects/Levelset/WATER_EXAMPLE.cpp
 ${PhysBAM_PL_DIR}/Projects/user_projects/Levelset/main.cpp
 )
-
 target_link_libraries(levelset PhysBAM_Tools PhysBAM_Geometry)
 
 
@@ -29,6 +27,17 @@ target_link_libraries(opengl_2d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
 add_executable(opengl_3d  ${PhysBAM_PL_DIR}/Projects/opengl_3d/main.cpp )
 target_link_libraries(opengl_3d PhysBAM_Tools PhysBAM_Geometry PhysBAM_OpenGL)
 
+# TODO: Add ray_tracing project to build
+# --------------------------------------------------------------------------------------
+# add_executable(ray_tracer 
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/Generic/GENERIC_RENDER_EXAMPLE.cpp
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/Generic/GENERIC_RENDER_EXAMPLE_LIGHTS.cpp
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/Generic/GENERIC_RENDER_EXAMPLE_LIST_OBJECTS.cpp
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/Generic/GENERIC_RENDER_EXAMPLE_MATERIALS.cpp
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/Generic/GENERIC_RENDER_EXAMPLE_OBJECTS.cpp
+# ${PhysBAM_PL_DIR}/Projects/ray_tracing/ray_tracing.cpp)
+# target_link_libraries(ray_tracer PhysBAM_Tools PhysBAM_Geometry PhysBAM_RayTracing)
+# --------------------------------------------------------------------------------------
 
 add_executable(strand_forward_euler 
 ${PhysBAM_PL_DIR}/Projects/user_projects/strand_forward_euler/SIMULATION_DRIVER.cpp
@@ -39,6 +48,7 @@ ${PhysBAM_PL_DIR}/Projects/user_projects/strand_forward_euler/main.cpp
 target_link_libraries(strand_forward_euler PhysBAM_Tools PhysBAM_Geometry)
 
 
+# strand_semi_implicit
 add_executable(strand_semi_implicit
 ${PhysBAM_PL_DIR}/Projects/user_projects/strand_semi_implicit/SIMULATION_DRIVER.cpp
 ${PhysBAM_PL_DIR}/Projects/user_projects/strand_semi_implicit/SIMULATION_LAYOUT.cpp

@@ -16,7 +16,8 @@ add_library(PhysBAM_RayTracing ${PhysBAM_Ray_Tracing_SOURCE} ${PhysBAM_Ray_Traci
 
 FIND_PACKAGE(OpenGL)
 FIND_PACKAGE(GLUT)
+FIND_PACKAGE(X11 REQUIRED)
 
-target_link_libraries(PhysBAM_OpenGL PhysBAM_Tools PhysBAM_Geometry ${PHYSBAM_LIBS} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+target_link_libraries(PhysBAM_OpenGL PhysBAM_Tools PhysBAM_Geometry ${PHYSBAM_LIBS} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${X11_LIBRARIES})
 
 target_link_libraries(PhysBAM_RayTracing PhysBAM_Tools PhysBAM_Geometry ${PHYSBAM_LIBS} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
