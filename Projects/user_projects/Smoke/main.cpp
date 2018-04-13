@@ -39,7 +39,7 @@ int main(int argc,char *argv[])
     typedef float T;
     typedef float RW;
     STREAM_TYPE stream_type((RW()));
-
+    
     MPI_WORLD mpi_world(argc,argv);
 
     PARSE_ARGS parse_args;

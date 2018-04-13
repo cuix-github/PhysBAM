@@ -7,21 +7,21 @@ This is using the public version of [physbam](http://physbam.stanford.edu/)
 Latest Compiling Options:
 
 ```
-option(PHYSBAM_USE_DOUBLE   		"Turn ON to enable double support"  										OFF )
-option(PHYSBAM_USE_DYADIC   		"Turn ON to enable dyadic support"  										OFF )
-option(PHYSBAM_USE_BINTREE  		"Turn ON to enable bintree support" 										OFF )
-option(PHYSBAM_USE_RLE      		"Turn ON to enable RLE support"     										OFF )
-option(PHYSBAM_USE_ZLIB     		"Turn ON to enable zlib support"    										OFF )
-option(PHYSBAM_USE_ID_TYPES   		"Treat ID types as int to avoid possible performance consequences"    		OFF )
-option(PHYSBAM_USE_FFMPEG   		"Turn ON to enable ffmpeg support"  										OFF )
-option(PHYSBAM_USE_JPEG     		"Turn ON to enable libjpeg support" 										OFF )
-option(PHYSBAM_USE_PNG      		"Turn ON to enable png support"     										OFF )
-option(PHYSBAM_USE_OPENEXR  		"Turn ON to enable OpenEXR support" 										OFF )
-option(PHYSBAM_USE_FFTW     		"Turn ON to enable FFTW support"    										OFF )
-option(PHYSBAM_USE_MPI      		"Turn ON to enable MPI support"     										OFF )
-option(PHYSBAM_USE_PTHREADS      	"Turn ON to enable PThreads support"     									OFF )
-option(PHYSBAM_USE_COMPRESSION		"Turn ON to enable Compression support"     								OFF )
-option(PHYSBAM_BUILD_PROJECTS		"Turn ON to build example projects"         								ON  )
+option(PHYSBAM_USE_DOUBLE		"Description to the option"	OFF)
+option(PHYSBAM_USE_DYADIC		"Description to the option"	OFF)
+option(PHYSBAM_USE_BINTREE		"Description to the option"	OFF)
+option(PHYSBAM_USE_RLE			"Description to the option"	OFF)
+option(PHYSBAM_USE_ZLIB			"Description to the option"	OFF)
+option(PHYSBAM_USE_ID			"Description to the option"	OFF)
+option(PHYSBAM_USE_FFMPEG		"Description to the option"	OFF)
+option(PHYSBAM_USE_JPEG			"Description to the option"	OFF)
+option(PHYSBAM_USE_PNG			"Description to the option"	OFF)
+option(PHYSBAM_USE_OPENEXR		"Description to the option"	OFF)
+option(PHYSBAM_USE_FFTW			"Description to the option"	OFF)
+option(PHYSBAM_USE_MPI			"Description to the option"	OFF)
+option(PHYSBAM_USE_PTHREADS		"Description to the option"	OFF)
+option(PHYSBAM_USE_COMPRESSION	"Description to the option"	OFF)
+option(PHYSBAM_BUILD_PROJECTS	"Description to the option"	ON)
 ```
 
 Note that these options probably based on the libraries installed locally. If any errors pop up, go check the corresponding libraries.
@@ -45,6 +45,8 @@ Will also compile using XCode
 
 Extra packages installed using homebrew:
 brew install ffmpeg openexr fftw zlib libpng libjpeg
+
+Note that currently we don't build the PhysBAM renderer which is in the directory PhysBAM/Projects/ray_tracing
 
 ```
 
